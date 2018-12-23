@@ -1,0 +1,46 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:ads="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                tools:context=".MainActivityFragment">
+
+    <TextView
+            android:id="@+id/instructions_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/instructions_textsize"
+            android:layout_marginBottom="@dimen/instructions_margin_bottom"
+            android:text="@string/instructions"
+            android:fontFamily="@font/gamjaflower"/>
+
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_tell_joke"
+            android:layout_below="@+id/instructions_text_view"
+            android:onClick="tellJoke"
+            android:text="@string/button_text"/>
+
+    <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:adjustViewBounds="true"
+            android:src="@drawable/joker_with_medal"
+            android:id="@+id/iv_android_joker"
+            android:layout_marginTop="@dimen/android_joker_image_top_margin"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"/>
+
+    <ProgressBar
+            android:id="@+id/pb_loading_indicator"
+            android:layout_height="@dimen/loading_indicator_width_and_height"
+            android:layout_width="@dimen/loading_indicator_width_and_height"
+            android:layout_centerInParent="true"
+            android:visibility="invisible"/>
+
+</RelativeLayout>

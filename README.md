@@ -1,3 +1,8 @@
+To run the project on a phone rather than an emulator, in MainActivity.EndpointsAsyncTask 
+Change setRootUrl to use your own IP address
+```````````````````````````````````````````````````````````````````````
+Before running the app, follow step 3 of the instructions below 
+
 # Gradle for Android and Java Final Project
 
 In this project, you will create an app with multiple flavors that uses
