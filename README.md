@@ -1,8 +1,3 @@
-To run the project on a phone rather than an emulator, in MainActivity.EndpointsAsyncTask 
-Change setRootUrl to use your own IP address
-```````````````````````````````````````````````````````````````````````
-Before running the app, follow step 3 of the instructions below 
-
 # Gradle for Android and Java Final Project
 
 In this project, you will create an app with multiple flavors that uses
@@ -11,6 +6,11 @@ of four modules. A Java library that provides jokes, a Google Cloud Endpoints
 (GCE) project that serves those jokes, an Android Library containing an
 activity for displaying jokes, and an Android app that fetches jokes from the
 GCE module and passes them to the Android Library for display.
+
+To run the project on a phone rather than an emulator, in MainActivity.EndpointsAsyncTask 
+Change setRootUrl to use your own IP address
+
+Before running the app, follow step 3 of the instructions below 
 
 ## Why this Project
 
