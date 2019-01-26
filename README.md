@@ -17,12 +17,12 @@ GCE module and passes them to the Android Library for display.
 - [Rubric](#rubric)
 
 ## Preview
-![](https://github.com/keldavis/build-it-bigger/blob/master/screenshots/preview.gif)
+![](https://github.com/keldavis/Jokester/blob/master/screenshots/preview.gif)
 
 ## Download
-The files can be downloaded [here](https://github.com/keldavis/build-it-bigger/archive/master.zip)
+The files can be downloaded [here](https://github.com/keldavis/Jokester/archive/master.zip)
 
-The entire project can be cloned using this link: https://github.com/keldavis/build-it-bigger.git
+The entire project can be cloned using this link: https://github.com/keldavis/Jokester.git
 
 ## How to run this project
 If you want to run the project on a physical device, in “MainActivity.EndpointsAsyncTask”,  change “setRootUrl” to use your system’s IP address. I added the following code to the backend module’s build.gradle file to support this:
