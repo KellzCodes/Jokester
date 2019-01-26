@@ -7,10 +7,36 @@ of four modules. A Java library that provides jokes, a Google Cloud Endpoints
 activity for displaying jokes, and an Android app that fetches jokes from the
 GCE module and passes them to the Android Library for display.
 
-To run the project on a phone rather than an emulator, in MainActivity.EndpointsAsyncTask 
-Change setRootUrl to use your own IP address
+## Table of Contents
+- [Preview](#preview)
+- [Download](#download)
+- [How To Run This Project](#how-to-run-this-project)
+- [Why This Project](#why-this-project)
+- [What Will I Learn](#what-will-i-learn)
+- [How Do I Complete This Project](#how-do-i-complete-this-project)
+- [Rubric](#rubric)
 
-Before running the app, follow step 3 of the instructions below 
+## Preview
+![](https://github.com/keldavis/build-it-bigger/blob/master/screenshots/preview.gif)
+
+## Download
+The files can be downloaded [here](https://github.com/keldavis/build-it-bigger/archive/master.zip)
+
+The entire project can be cloned using this link: https://github.com/keldavis/build-it-bigger.git
+
+## How to run this project
+If you want to run the project on a physical device, in “MainActivity.EndpointsAsyncTask”,  change “setRootUrl” to use your system’s IP address. I added the following code to the backend module’s build.gradle file to support this:
+
+`appengine {
+    run {
+        host = "0.0.0.0"
+        port = 8080
+    }
+}`
+
+If you want to run the project on an emulator, comment out the above from the backend build.gradle file then change "setRootUrl” to 10.0.2.2, which is the emulator localhost IP address. 
+
+Before running the app,﻿ you also must follow step 3 of the instructions below to set up a local Google Cloud Endpoints server and start the server via the Gradle Projects pane.
 
 ## Why this Project
 
